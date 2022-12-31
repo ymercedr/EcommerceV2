@@ -1,0 +1,47 @@
+.book-container {
+  height: 100%;
+  background-color: #a58989;
+  display: grid;
+  grid-template-columns: 19rem 19rem 19rem 19rem;
+  grid-template-rows: 35rem 35rem;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.book {
+  width: 300px;
+  height: 100%;
+  color: white;
+  border-style: dotted;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.book img {
+  width: 150px;
+  height: 220px;
+}
+
+.book .title {
+  font-weight: bold;
+}
+
+.book p {
+  margin: 15px;
+}
+
+.shop-button {
+  padding: 8px;
+  background-color: #607460;
+  color: #fff4f4;
+  border-color: #fff4f4;
+}
+
+.shop-button:hover {
+  background-color: #fff4f4;
+  color: #607460;
+  border-color: #607460;
+}

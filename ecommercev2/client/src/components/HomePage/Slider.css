@@ -1,0 +1,23 @@
+.staffpicks-container {
+  margin-top: 100px;
+  height: 400px;
+  margin-bottom: 300px;
+  text-align: center;
+}
+
+.staffpicks-container h3 {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.staffpicks-container .bi {
+  color: #fdfa66;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.each-slide {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}

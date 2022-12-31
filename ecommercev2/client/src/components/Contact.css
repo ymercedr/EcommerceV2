@@ -1,0 +1,77 @@
+.contact-container {
+  background-image: url(/public/images/book-background.avif);
+  background-size: cover;
+  padding: 50px;
+}
+
+.contact-container .form-container {
+  background-image: linear-gradient(#fff4f4, #89a589);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: center;
+  height: 60%;
+  width: 50%;
+  /* max-width: 97%; */
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 25px auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+.form-container p {
+  padding: 15px;
+  margin: 5px;
+  margin-top: 0px;
+}
+
+.form-container label {
+  font-weight: bold;
+  color: black;
+  margin: 10px;
+}
+
+.form-container input {
+  max-width: 60%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+  background: transparent;
+}
+
+.form-container textarea {
+  max-width: 60%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+  background: transparent;
+}
+
+.form-container .submit {
+  width: 100px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: #607460;
+  color: #fff4f4;
+  border-color: #fff4f4;
+  cursor: pointer;
+}
+
+/* Changes color when hovered */
+.submit:hover {
+  background-color: #fff4f4;
+  color: #607460;
+  border-color: #607460;
+}
+
+/* Focus when each textbox is clicked */
+input:focus,
+textarea:focus {
+  border: 1px solid #607460;
+}

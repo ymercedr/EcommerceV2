@@ -1,0 +1,43 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.footer-distributed {
+  background-color: #746060;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 35px 40px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #a58989;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #fff4f4;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+}
+
+/* Changes color when hovering */
+.footer-distributed .footer-right a:hover {
+  color: #89a589;
+}
+
+.fa {
+  padding: 1px;
+  text-decoration: none;
+  margin: 0px;
+}

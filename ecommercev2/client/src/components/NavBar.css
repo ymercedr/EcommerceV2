@@ -1,0 +1,57 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+/* Logo */
+.logo ul {
+  padding: 5px;
+  margin: 0px;
+}
+
+.logo ul li {
+  padding: 2px;
+  margin-left: 5px;
+}
+
+.logo ul li {
+  list-style: none;
+  color: #fff4f4;
+  float: left;
+  font-size: 30px;
+  transition: 1.2s;
+}
+
+/* Turn 360 degrees when hovered */
+.logo ul:hover li {
+  transform: rotateY(360deg);
+  color: #89a589;
+}
+
+/* Nav Bar */
+.link ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.link ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff4f4;
+  margin: 5px;
+}
+
+/* Changes color when hovering */
+.link ul li a:hover {
+  color: #89a589;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  color: #fff4f4;
+  font-weight: bold;
+  align-items: center;
+  background-color: #746060;
+}
