@@ -1,7 +1,7 @@
 .store-container {
   background-image: url(/public/images/home-image.webp);
   background-size: cover;
-  height: 700px;
+  height: 750px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,13 +33,12 @@
 
 .store-textbox button {
   padding: 10px;
-  background-color: #607460;
-  color: #fff4f4;
-  border-color: #fff4f4;
+  background-color: #89a589;
+  border-color: #89a589;
 }
 
 .store-textbox button:hover {
-  background-color: #fff4f4;
-  color: #607460;
+  background-color: #607460;
+  color: #fff4f4;
   border-color: #607460;
 }

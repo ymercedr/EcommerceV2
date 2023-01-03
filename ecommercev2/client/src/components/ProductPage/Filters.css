@@ -1,0 +1,62 @@
+.filters {
+  padding: 2px;
+  background-color: #a58989;
+}
+
+.filters p {
+  font-size: 25px;
+}
+
+.genreFilter {
+  margin: 20px;
+  background-color: #fff4f4;
+  padding: 20px;
+  border-style: dashed;
+  border-color: #607460;
+}
+
+.genreButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.priceFilter {
+  margin: 20px;
+  background-color: #fff4f4;
+  padding: 20px;
+  border-style: dashed;
+  border-color: #607460;
+}
+
+.priceButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.filters button {
+  padding: 8px;
+  background-color: #89a589;
+  border-color: #89a589;
+  font-size: 15px;
+}
+.filters button:hover {
+  background-color: #607460;
+  color: #fff4f4;
+  border-color: #607460;
+}
+
+@media screen and (max-width: 425px) {
+  .genreButtons {
+    flex-direction: column;
+  }
+
+  .priceButtons {
+    flex-direction: column;
+  }
+}

@@ -15,7 +15,7 @@ export default function AboutUs() {
           of books and reading. Very few times you will find her without the
           company of her current read. Books have always made her feel connected
           to herself and others in a way nothing else has ever even come close
-          to, which is why she created Book Lovers
+          to, which is why she created Book Lovers.
         </p>
         <Link to="/contact">
           <button>Contact Us!</button>

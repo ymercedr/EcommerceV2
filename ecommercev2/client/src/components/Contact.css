@@ -75,3 +75,15 @@ input:focus,
 textarea:focus {
   border: 1px solid #607460;
 }
+
+@media screen and (max-width: 1024px) {
+  .contact-container .form-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-container {
+    padding: 20px 15px;
+  }
+}

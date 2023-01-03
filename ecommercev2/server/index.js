@@ -40,6 +40,17 @@ app.get("/filter/:amount", (req, res) => {
   });
 });
 
+//Route to get all products from x genre
+app.get("/genre/:category", (req, res) => {
+  const genre = req.params.category;
+  // console.log(genre);
+  const q = `SELECT * FROM products_list WHERE productGenre = ${genre}`;
+  db.query(q, (err, data) => {
+    if (err) return res.json(err);
+    return res.json(data);
+  });
+});
+
 //USEFULL AUTHOR
 //Route to get all books from a specific author
 // app.get("/filter/:author", (req, res) => {

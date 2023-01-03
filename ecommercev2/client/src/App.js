@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./components/HomePage/Home";
 import Contact from "./components/Contact";
-import Products from "./components/Products";
+import Products from "./components/ProductPage/Products";
 
 function App() {
   return (

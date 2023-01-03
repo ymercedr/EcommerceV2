@@ -55,3 +55,10 @@
   align-items: center;
   background-color: #746060;
 }
+
+@media screen and (max-width: 550px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
