@@ -1,9 +1,8 @@
 .book-container {
-  height: 100%;
   background-color: #a58989;
   display: grid;
   grid-template-columns: 19rem 19rem 19rem 19rem;
-  grid-template-rows: 35rem 35rem;
+  grid-template-rows: auto auto;
   gap: 50px;
   justify-content: center;
   align-items: center;
@@ -12,8 +11,8 @@
 }
 
 .book {
-  width: 300px;
-  height: 100%;
+  width: 290px;
+  height: 570px;
   color: white;
   border-style: dotted;
   border-radius: 20px;
@@ -30,7 +29,7 @@
 }
 
 .book p {
-  margin: 15px;
+  margin: 10px;
 }
 
 .shop-button {
@@ -51,23 +50,23 @@
     grid-template-columns: 18rem 18rem 18rem;
     gap: 50px;
   }
-  .book {
-    width: 280px;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .book-container {
     grid-template-columns: 19rem 19rem;
-    gap: 80px;
+    gap: 60px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .book-container {
-    grid-template-columns: 18rem;
-    gap: 60px;
+    grid-template-columns: 19rem;
+    gap: 50px;
     padding: 20px;
+  }
+  .book {
+    height: 600px;
   }
 }
 

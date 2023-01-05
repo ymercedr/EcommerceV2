@@ -1,13 +1,13 @@
 //Creating the server
 const express = require("express");
 const mysql = require("mysql");
-const cors = require("cors");
+// const cors = require("cors");
 
 const app = express();
 const PORT = 3001;
 
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
 
 //MySQL Connection
 const db = mysql.createConnection({
@@ -50,19 +50,6 @@ app.get("/genre/:category", (req, res) => {
     return res.json(data);
   });
 });
-
-//USEFULL AUTHOR
-//Route to get all books from a specific author
-// app.get("/filter/:author", (req, res) => {
-//   const aName = req.params.author;
-//   console.log(req.params.author);
-//   // console.log(price);
-//   const q = `SELECT * FROM products_list WHERE productAuthor = ${aName}`;
-//   db.query(q, (err, data) => {
-//     if (err) return res.json(err);
-//     return res.json(data);
-//   });
-// });
 
 //INITIAL ROUTES TO GET ALL PRODUCTS $10/$15 OR LESS
 // app.get("/lessThanTen", (req, res) => {

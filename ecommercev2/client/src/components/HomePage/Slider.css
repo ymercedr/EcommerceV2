@@ -1,8 +1,6 @@
 .staffpicks-container {
-  height: 100%;
   background-color: #fff4f4;
   padding-top: 100px;
-  /* height: 400px; */
   padding-bottom: 200px;
   text-align: center;
 }
@@ -18,8 +16,20 @@
   padding: 5px;
 }
 
-.each-slide {
+.each-slide img {
   margin-top: 20px;
-  max-width: 100%;
-  height: auto;
+  max-width: 95%;
+  max-height: 550px;
+}
+
+@media screen and (max-width: 768px) {
+  .each-slide img {
+    max-height: 475px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .each-slide img {
+    max-height: 400px;
+  }
 }

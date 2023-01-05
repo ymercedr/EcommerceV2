@@ -1,7 +1,7 @@
 .store-container {
   background-image: url(/public/images/home-image.webp);
   background-size: cover;
-  height: 750px;
+  height: 735px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -10,25 +10,22 @@
 }
 
 .store-textbox {
+  margin: 15px;
   background-color: #a58989;
   max-height: 70%;
   max-width: 50%;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   border-style: dotted;
   border-radius: 20px;
-  padding-bottom: 20px;
-  padding-top: 0px;
+  padding: 20px;
+  /* padding-top: 0px; */
 }
 
 .store-textbox h3 {
   margin: 10px;
   font-size: 35px;
-}
-
-.store-textbox {
-  padding: 20px;
 }
 
 .store-textbox button {
@@ -41,4 +38,15 @@
   background-color: #607460;
   color: #fff4f4;
   border-color: #607460;
+}
+
+@media screen and (max-width: 425px) {
+  .store-container {
+    max-height: 1000px;
+  }
+
+  .store-textbox {
+    max-height: 100%;
+    max-width: 65%;
+  }
 }

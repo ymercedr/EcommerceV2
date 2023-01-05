@@ -8,9 +8,9 @@
 }
 
 .genreFilter {
-  margin: 20px;
+  margin: 20px 60px;
   background-color: #fff4f4;
-  padding: 20px;
+  padding: 10px;
   border-style: dashed;
   border-color: #607460;
 }
@@ -24,9 +24,9 @@
 }
 
 .priceFilter {
-  margin: 20px;
+  margin: 20px 60px;
   background-color: #fff4f4;
-  padding: 20px;
+  padding: 10px;
   border-style: dashed;
   border-color: #607460;
 }
