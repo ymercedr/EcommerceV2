@@ -1,20 +1,26 @@
 //Creating the server
 const express = require("express");
 const mysql = require("mysql");
-// const cors = require("cors");
+const cors = require("cors");
 
 const app = express();
 const PORT = 3001;
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
 //MySQL Connection
 const db = mysql.createConnection({
-  host: "127.0.0.1",
-  user: "devuser",
-  password: "Y16road2hire",
+  //RDS credentials
+  host: "database-1.cgfpjcceic14.us-east-1.rds.amazonaws.com",
+  user: "admin",
+  password: "password",
   database: "EcomProducts",
+  //LocalHost credentials
+  // host: "127.0.0.1",
+  // user: "devuser",
+  // password: "Y16road2hire",
+  // database: "EcomProducts",
 });
 
 app.get("/", (req, res) => res.json("Hello this is the backend."));
