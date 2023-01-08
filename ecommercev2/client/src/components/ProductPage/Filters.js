@@ -17,7 +17,7 @@ export default function Filters(props) {
   const filterPrice = (price) => {
     const fetchFilteredPrice = async () => {
       try {
-        const res = await axios.get(`http://localhost:3001/filter/${price}`);
+        const res = await axios.get(`${props.dbConnection}/filter/${price}`);
         props.setBooks(res.data);
         console.log(res);
       } catch (err) {
@@ -32,7 +32,7 @@ export default function Filters(props) {
     // console.log(genre);
     const fetchFilteredGenre = async () => {
       try {
-        const res = await axios.get(`http://localhost:3001/genre/${genre}`);
+        const res = await axios.get(`${props.dbConnection}/genre/${genre}`);
         props.setBooks(res.data);
         console.log(res);
       } catch (err) {
