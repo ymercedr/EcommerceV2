@@ -3,6 +3,15 @@ import axios from "axios";
 import "./Filters.css";
 
 export default function Filters(props) {
+  const bookGenres = [
+    { genreID: 1, genreName: "Science Fiction" },
+    { genreID: 2, genreName: "Historical Fiction" },
+    { genreID: 3, genreName: "Mystery" },
+    { genreID: 4, genreName: "Biography" },
+    { genreID: 5, genreName: "Fiction" },
+    { genreID: 6, genreName: "Romance" },
+    { genreID: 7, genreName: "Young Adult" },
+  ];
   //-------------------------- FILTER FUNCTIONS ------------------------------
   //Filter By Price
   const filterPrice = (price) => {
@@ -62,19 +71,14 @@ export default function Filters(props) {
       <div className="genreFilter">
         <p>Browse by Genre:</p>
         <div className="genreButtons">
-          <button onClick={() => filterGenre(`"Science Fiction"`)}>
-            Science Fiction
-          </button>
-          <button onClick={() => filterGenre(`"Historical Fiction"`)}>
-            Historical Fiction
-          </button>
-          <button onClick={() => filterGenre(`"Mystery"`)}>Mystery</button>
-          <button onClick={() => filterGenre(`"Biography"`)}>Biography</button>
-          <button onClick={() => filterGenre(`"Fiction"`)}>Fiction</button>
-          <button onClick={() => filterGenre(`"Romance"`)}>Romance</button>
-          <button onClick={() => filterGenre(`"Young Adult"`)}>
-            Young Adult
-          </button>
+          {bookGenres.map((genre) => (
+            <button
+              key={genre.genreID}
+              onClick={() => filterGenre(`"${genre.genreName}"`)}
+            >
+              {genre.genreName}
+            </button>
+          ))}
         </div>
       </div>
       <div className="priceFilter">
