@@ -19,7 +19,7 @@ const db = mysql.createConnection({
   //LocalHost credentials
   // host: "127.0.0.1",
   // user: "devuser",
-  // password: "Y16road2hire",
+  // password: ,
   // database: "EcomProducts",
 });
 
